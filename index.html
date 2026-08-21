@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda - Lista de Regalos</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f7f3ee;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #2c3e2d;
+            color: #f7f3ee;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #6b8e6e;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            color: #2c3e2d;
+            font-size: 1.4em;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            flex-grow: 1;
+        }
+        .price {
+            font-weight: bold;
+            color: #8b7355;
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            text-align: center;
+            background-color: #6b8e6e;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2c3e2d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nuestra Aventura Comienza</h1>
+        <p>Más que cosas, queremos coleccionar momentos mágicos. Ayúdanos a vivirlos.</p>
+    </header>
+
+    <div class="container">
+        <!-- Regalo 1 -->
+        <div class="card">
+            <h3>Refugio entre las copas de los árboles</h3>
+            <p>Una noche en una cabaña suspendida en medio de la selva valdiviana. Un lugar donde la bruma de la mañana se enreda entre los helechos gigantes y el tiempo parece detenerse.</p>
+            <div class="price">$180.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 2 -->
+        <div class="card">
+            <h3>El tiempo suspendido en el agua</h3>
+            <p>Una tarde de inmersión en termas de piedra volcánica bajo la lluvia del sur. Un ritual de desconexión total rodeados de bosque nativo y vapor.</p>
+            <div class="price">$120.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 3 -->
+        <div class="card">
+            <h3>Cena a ciegas bajo la Vía Láctea</h3>
+            <p>Una cena íntima al aire libre en el Valle del Elqui, iluminados únicamente por los astros más limpios del planeta y acompañados de los espíritus de la montaña.</p>
+            <div class="price">$95.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 4 -->
+        <div class="card">
+            <h3>Tarde de alquimia y vino</h3>
+            <p>Un recorrido por viñedos centenarios al atardecer, seguido de una cata de vinos de autor donde la tierra cuenta sus secretos más antiguos en cada copa.</p>
+            <div class="price">$70.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 5 -->
+        <div class="card">
+            <h3>Vuelo al amanecer sobre el valle</h3>
+            <p>Ver el mundo despertar desde el silencio absoluto de un globo aerostático, flotando como plumas mientras el sol pinta de dorado los campos de Chile.</p>
+            <div class="price">$250.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 6 -->
+        <div class="card">
+            <h3>Navegación hacia el fin del mundo</h3>
+            <p>Un paseo en bote por fiordos silenciosos o lagos australes al atardecer, escuchando el crujir del hielo milenario o el canto del viento patagónico.</p>
+            <div class="price">$150.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 7 -->
+        <div class="card">
+            <h3>Banquete clandestino en el bosque</h3>
+            <p>Una experiencia gastronómica secreta. Una mesa rústica escondida en la naturaleza, con ingredientes recolectados ese mismo día y cocinados a fuego abierto.</p>
+            <div class="price">$85.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 8 -->
+        <div class="card">
+            <h3>Ritual de agua y tierra</h3>
+            <p>Un día de spa completo para dos inspirado en tradiciones ancestrales. Masajes con piedras calientes, esencias de la cordillera y silencio absoluto.</p>
+            <div class="price">$110.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 9 -->
+        <div class="card">
+            <h3>Noche de cine privado bajo las estrellas</h3>
+            <p>Un proyector, mantas, vino y la bóveda celeste. Una función de cine exclusiva para dos en un rincón apartado de la civilización.</p>
+            <div class="price">$50.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+
+        <!-- Regalo 10 -->
+        <div class="card">
+            <h3>Taller de cerámica a cuatro manos</h3>
+            <p>Mancharse las manos con arcilla y moldear piezas juntos. Un acto de creación compartida y una tarde llena de risas, tierra y café.</p>
+            <div class="price">$45.000 CLP</div>
+            <a href="#" class="btn">Regalar experiencia</a>
+        </div>
+    </div>
+
+</body>
+</html>
