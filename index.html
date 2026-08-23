@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Boda - Lista de Regalos</title>
+    <title>Nuestro Gran Viaje - Lista de Regalos</title>
+    <!-- IMPORTAMOS LAS FUENTES DE GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Georgia', serif;
-            background-color: #f7f3ee;
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #f5f1e9; /* NUEVO COLOR DE FONDO APLICADO AQUÍ */
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #2c3e2d;
-            color: #f7f3ee;
+            padding: 20px 20px 50px;
+            background-color: #2c3e2d; /* Puedes cambiar este verde si quieres otro tono */
+            color: #f5f1e9;
         }
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            font-family: 'Allura', cursive;
+            font-size: 3.5em;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            margin-top: 0;
         }
         header p {
-            font-size: 1.2em;
-            font-style: italic;
+            font-size: 1.1em;
+            line-height: 1.5;
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: normal;
+        }
+        .header-illustration {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .container {
             max-width: 1000px;
@@ -46,12 +61,16 @@
             justify-content: space-between;
         }
         .card h3 {
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: 700;
             color: #2c3e2d;
-            font-size: 1.4em;
+            font-size: 1.3em;
             margin-top: 0;
+            margin-bottom: 10px;
+            line-height: 1.3;
         }
         .card p {
-            font-size: 1em;
+            font-size: 0.95em;
             line-height: 1.6;
             color: #555;
             flex-grow: 1;
@@ -81,91 +100,88 @@
 <body>
 
     <header>
-        <h1>Nuestra Aventura Comienza</h1>
-        <p>Más que cosas, queremos coleccionar momentos mágicos. Ayúdanos a vivirlos.</p>
+        <!-- IMAGEN DE CABECERA (PAISAJE DE ASIA/FUJI) -->
+        <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Paisaje de Japón" class="header-illustration">
+        
+        <h1>Nuestro gran viaje comienza aquí</h1>
+        <p>Antes de decir que sí, nos espera una aventura que llevamos mucho tiempo soñando: recorrer Asia juntos. En lugar de regalos tradicionales, quisimos convertirlos en momentos que podremos recordar para siempre.</p>
     </header>
 
     <div class="container">
+        
         <!-- Regalo 1 -->
         <div class="card">
-            <h3>Refugio entre las copas de los árboles</h3>
-            <p>Una noche en una cabaña suspendida en medio de la selva valdiviana. Un lugar donde la bruma de la mañana se enreda entre los helechos gigantes y el tiempo parece detenerse.</p>
-            <div class="price">$180.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Entrada a Universal Studios Japón</h3>
+            <p>Un día para recorrer Universal Studios Japón, disfrutar de sus atracciones, conocer Super Nintendo World y descubrir todo lo que el parque tiene para ofrecer.</p>
+            <div class="price">$100.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 2 -->
         <div class="card">
-            <h3>El tiempo suspendido en el agua</h3>
-            <p>Una tarde de inmersión en termas de piedra volcánica bajo la lluvia del sur. Un ritual de desconexión total rodeados de bosque nativo y vapor.</p>
-            <div class="price">$120.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Forjando nuestro amor en Seúl</h3>
+            <p>Una experiencia para crear nuestros propios anillos en una forja tradicional de Seúl y llevarnos un recuerdo hecho por nosotros.</p>
+            <div class="price">$90.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 3 -->
         <div class="card">
-            <h3>Cena a ciegas bajo la Vía Láctea</h3>
-            <p>Una cena íntima al aire libre en el Valle del Elqui, iluminados únicamente por los astros más limpios del planeta y acompañados de los espíritus de la montaña.</p>
-            <div class="price">$95.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Una expedición al Monte Fuji 🗻</h3>
+            <p>Porque aparentemente ver el Fuji en fotos no será suficiente.</p>
+            <div class="price">$80.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 4 -->
         <div class="card">
-            <h3>Tarde de alquimia y vino</h3>
-            <p>Un recorrido por viñedos centenarios al atardecer, seguido de una cata de vinos de autor donde la tierra cuenta sus secretos más antiguos en cada copa.</p>
+            <h3>Laos sobre dos ruedas 🛵</h3>
+            <p>Recorrer las rutas de Laos en motocicleta, perder un poco el rumbo y encontrar lugares que jamás habríamos conocido de otra forma.</p>
             <div class="price">$70.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 5 -->
         <div class="card">
-            <h3>Vuelo al amanecer sobre el valle</h3>
-            <p>Ver el mundo despertar desde el silencio absoluto de un globo aerostático, flotando como plumas mientras el sol pinta de dorado los campos de Chile.</p>
-            <div class="price">$250.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Cruzar la frontera hacia Corea del Norte</h3>
+            <p>Un poco de adrenalina en la Zona Desmilitarizada (DMZ). ¡Prometemos volver a salvo!</p>
+            <div class="price">$60.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 6 -->
         <div class="card">
-            <h3>Navegación hacia el fin del mundo</h3>
-            <p>Un paseo en bote por fiordos silenciosos o lagos australes al atardecer, escuchando el crujir del hielo milenario o el canto del viento patagónico.</p>
-            <div class="price">$150.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Caminando sobre la Gran Muralla China 🏯</h3>
+            <p>Una de esas cosas que probablemente diremos que fue una excelente idea… hasta que nos duelan las piernas.</p>
+            <div class="price">$50.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 7 -->
         <div class="card">
-            <h3>Banquete clandestino en el bosque</h3>
-            <p>Una experiencia gastronómica secreta. Una mesa rústica escondida en la naturaleza, con ingredientes recolectados ese mismo día y cocinados a fuego abierto.</p>
-            <div class="price">$85.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Atardecer en globo aerostático en Laos</h3>
+            <p>Contemplar el atardecer desde las alturas y disfrutar de una vista panorámica de los paisajes de Laos, rodeados de montañas, naturaleza y los últimos rayos de sol.</p>
+            <div class="price">$40.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 8 -->
         <div class="card">
-            <h3>Ritual de agua y tierra</h3>
-            <p>Un día de spa completo para dos inspirado en tradiciones ancestrales. Masajes con piedras calientes, esencias de la cordillera y silencio absoluto.</p>
-            <div class="price">$110.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Participar en una pelea de Sumo</h3>
+            <p>O al menos intentar ir a ver un entrenamiento de cerca sin que nos aplasten en el intento.</p>
+            <div class="price">$30.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
         <!-- Regalo 9 -->
         <div class="card">
-            <h3>Noche de cine privado bajo las estrellas</h3>
-            <p>Un proyector, mantas, vino y la bóveda celeste. Una función de cine exclusiva para dos en un rincón apartado de la civilización.</p>
-            <div class="price">$50.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
+            <h3>Cena en un Konbini</h3>
+            <p>Una noche de festín callejero a base de onigiris, ramen y un buen café en un 7-Eleven o FamilyMart japonés.</p>
+            <div class="price">$20.000 CLP</div>
+            <a href="#" target="_blank" class="btn">Aportar a esta aventura</a>
         </div>
 
-        <!-- Regalo 10 -->
-        <div class="card">
-            <h3>Taller de cerámica a cuatro manos</h3>
-            <p>Mancharse las manos con arcilla y moldear piezas juntos. Un acto de creación compartida y una tarde llena de risas, tierra y café.</p>
-            <div class="price">$45.000 CLP</div>
-            <a href="#" class="btn">Regalar experiencia</a>
-        </div>
     </div>
 
 </body>
-</html> 
+</html>
